@@ -1,5 +1,4 @@
-import 'package:elektrostok/routes.dart';
-import 'package:elektrostok/screens/home_screen.dart';
+import 'package:elektrostok/router.dart';
 import 'package:elektrostok/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -14,12 +13,11 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       title: 'Electrostok',
       debugShowCheckedModeBanner: false,
       theme: AppTheme.lightTheme(context),
-      initialRoute: HomeScreen.routeName,
-      routes: routes,
+      routerConfig: router,
     );
   }
 }

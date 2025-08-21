@@ -19,7 +19,7 @@ class HomeHeader extends StatelessWidget {
             numOfItems: 2, // Replace with actual cart item count
             press: () {
               // Navigate to cart screen
-              Navigator.pushNamed(context, '/cart');
+              // Navigator.pushNamed(context, '/cart');
             },
           ),
         ],
