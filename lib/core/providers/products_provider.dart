@@ -1,6 +1,6 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'dio_provider.dart';
-import 'package:elektrostok/models/product.dart';
+import 'package:elektrostok/core/models/product.dart';
 import 'dart:convert';
 
 final productsProvider = FutureProvider.autoDispose<List<Product>>((ref) async {

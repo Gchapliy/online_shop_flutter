@@ -1,4 +1,4 @@
-import 'package:elektrostok/constants.dart';
+import 'package:elektrostok/core/constants/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class DiscountBanner extends StatelessWidget {

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'constants.dart';
+import 'core/constants/app_colors.dart';
 
 class AppTheme {
   static lightTheme(BuildContext context) {

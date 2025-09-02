@@ -7,3 +7,5 @@ const tertiaryColor = Color(0xFF979797);
 const lightRed = Color(0xFFFF4848);
 
 const textColor = Colors.black;
+
+const textInputBackground = Color(0xFFF7F7F7);
