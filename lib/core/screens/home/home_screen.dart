@@ -1,7 +1,10 @@
+import 'package:elektrostok/core/constants/constants.dart';
 import 'package:elektrostok/core/screens/home/components/discount_banner.dart';
 import 'package:elektrostok/core/screens/home/components/home_header.dart';
 import 'package:flutter/material.dart';
 import 'package:elektrostok/core/screens/home/components/product_list.dart';
+
+import 'package:flutter_svg/svg.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -10,11 +13,12 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
+        bottom: false,
         child: Column(
           children: [
             HomeHeader(),
             // DiscountBanner(),
-            // ProductList(),
+            ProductList(),
           ],
         ),
       ),

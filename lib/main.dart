@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
-      title: 'Electrostok',
+      title: 'Elektrostok',
       debugShowCheckedModeBanner: false,
       theme: AppTheme.lightTheme(context),
       routerConfig: router,
