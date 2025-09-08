@@ -12,3 +12,5 @@ const textColor = Colors.black;
 const iconDefaultColor = Color(0xFFFFFFFF);
 
 const textInputBackground = Color(0xFFF7F7F7);
+
+const Color placeholder = Color(0xFF8B8B97);
