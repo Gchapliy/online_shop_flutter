@@ -4,17 +4,21 @@ import 'package:flutter_svg/svg.dart';
 import 'package:elektrostok/core/constants/constants.dart';
 
 class BottomAppBarItem extends StatelessWidget {
-  const BottomAppBarItem({
+  BottomAppBarItem({
     super.key,
     required this.iconLocation,
     required this.name,
     required this.isActive,
     required this.onTap,
+    this.customIconSize = iconSize,
+    this.isCircled = true,
   });
 
   final String iconLocation;
   final String name;
   final bool isActive;
+  final double customIconSize;
+  final bool isCircled;
   final void Function() onTap;
 
   @override
@@ -24,20 +28,31 @@ class BottomAppBarItem extends StatelessWidget {
       child: Column(
         // mainAxisSize: MainAxisSize.min,
         children: [
-          ClipRRect(
-            borderRadius: BorderRadius.circular(
-              borderRadius,
-            ), // змініть на потрібний радіус
-            child: SvgPicture.asset(
+          if (isCircled)
+            ClipRRect(
+              borderRadius: BorderRadius.circular(
+                borderRadius,
+              ), // змініть на потрібний радіус
+              child: SvgPicture.asset(
+                iconLocation,
+                width: customIconSize, // встановіть потрібну ширину
+                height: customIconSize, // встановіть потрібну висоту
+                colorFilter: ColorFilter.mode(
+                  isActive ? primaryColor : tertiaryColor,
+                  BlendMode.srcIn,
+                ),
+              ),
+            ),
+          if (!isCircled)
+            SvgPicture.asset(
               iconLocation,
-              width: iconSize, // встановіть потрібну ширину
-              height: iconSize, // встановіть потрібну висоту
+              width: customIconSize, // встановіть потрібну ширину
+              height: customIconSize, // встановіть потрібну висоту
               colorFilter: ColorFilter.mode(
                 isActive ? primaryColor : tertiaryColor,
                 BlendMode.srcIn,
               ),
             ),
-          ),
           Text(
             name,
             style: Theme.of(context).textTheme.bodyLarge?.copyWith(

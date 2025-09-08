@@ -15,17 +15,17 @@ class HomeHeader extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          const _SideBarButton(),
+          //const _SideBarButton(),
           const Expanded(child: SearchField()),
-          const SizedBox(width: 16),
-          IconWithCounter(
-            svgSrc: cartIcon,
-            numOfItems: 2, // Replace with actual cart item count
-            press: () {
-              // Navigate to cart screen
-              // Navigator.pushNamed(context, '/cart');
-            },
-          ),
+          //const SizedBox(width: 16),
+          // IconWithCounter(
+          //   svgSrc: cartIcon,
+          //   numOfItems: 2, // Replace with actual cart item count
+          //   press: () {
+          //     // Navigate to cart screen
+          //     // Navigator.pushNamed(context, '/cart');
+          //   },
+          // ),
         ],
       ),
     );
