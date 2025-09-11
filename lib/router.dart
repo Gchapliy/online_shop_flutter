@@ -1,3 +1,4 @@
+import 'package:elektrostok/core/screens/catalog/catalog_screen.dart';
 import 'package:elektrostok/core/screens/drawer/drawer_screen.dart';
 import 'package:elektrostok/core/screens/entrypoint/entrypoint.dart';
 import 'package:elektrostok/core/screens/home/home_screen.dart';
@@ -12,10 +13,16 @@ final GoRouter router = GoRouter(
         return const EntryPoint();
       },
       routes: <RouteBase>[
+        // GoRoute(
+        //   path: 'drawer',
+        //   builder: (BuildContext context, GoRouterState state) {
+        //     return const DrawerScreen();
+        //   },
+        // ),
         GoRoute(
-          path: 'drawer',
+          path: 'catalog',
           builder: (BuildContext context, GoRouterState state) {
-            return const DrawerScreen();
+            return const CatalogScreen();
           },
         ),
       ],

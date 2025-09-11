@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:elektrostok/core/constants/constants.dart';
 import 'network_image.dart';
-import 'package:elektrostok/core/models/product.dart';
+import 'package:elektrostok/core/models/product/product.dart';
 
 class ProductCard extends StatelessWidget {
   const ProductCard({super.key, required this.data});

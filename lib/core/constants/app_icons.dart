@@ -8,3 +8,4 @@ const saveIcon = 'assets/icons/save_icon.svg';
 const heartIcon = 'assets/icons/heart_icon.svg';
 const heartFilledIcon = 'assets/icons/heart_filled_icon.svg';
 const catalogIcon = 'assets/icons/catalog_icon.svg';
+const backIcon = 'assets/icons/back_icon.svg';

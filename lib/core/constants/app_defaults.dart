@@ -5,7 +5,7 @@ const double margin = 15;
 const double padding = 15;
 const double radius = 15;
 
-const double iconSize = 30.0;
+const double iconSize = 28.0;
 
 const double borderRadius = 8.0;
 
